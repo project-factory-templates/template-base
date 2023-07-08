@@ -6,8 +6,7 @@ export default {
             message: 'Author:'
         }
     ],
-    onPromptSubmit: variables => ({
-        ...variables,
-        YEAR: new Date().getFullYear()
-    })
+    onPromptSubmit: variables => {
+        variables.YEAR = new Date().getFullYear()
+    }
 }
